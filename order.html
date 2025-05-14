@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Online | Skakerdo Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Skakerdo Restaurant</h1>
+      <ul>
+        <li><a href="skaker.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="order.html">Order Online</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Order Online</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Pizza</h3>
+        <p>Delicious cheesy pizza.</p>
+        <span>$10.99</span>
+        <button onclick="addToCart('Pizza', 10.99)">Add to Order</button>
+      </div>
+      <div class="menu-item">
+        <h3>Burger</h3>
+        <p>Juicy beef burger.</p>
+        <span>$8.49</span>
+        <button onclick="addToCart('Burger', 8.49)">Add to Order</button>
+      </div>
+    </div>
+
+    <h3>Your Order</h3>
+    <ul id="cartItems"></ul>
+    <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
+
+    <form onsubmit="return submitOrderForm()">
+      <input type="text" id="orderName" placeholder="Your Name" required />
+      <input type="text" id="orderAddress" placeholder="Delivery Address" required />
+      <input type="tel" id="orderPhone" placeholder="Phone Number" required />
+      <button type="submit">Checkout</button>
+    </form>
+    <p id="orderConfirmation"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

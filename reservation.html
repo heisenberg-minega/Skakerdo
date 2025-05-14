@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservation | Skakerdo Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Skakerdo Restaurant</h1>
+      <ul>
+        <li><a href="skaker.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="order.html">Order Online</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Make a Reservation</h2>
+    <form id="reservationForm" onsubmit="return validateReservationForm()">
+      <input type="date" id="date" required />
+      <input type="time" id="time" required />
+      <input type="number" id="guests" placeholder="Number of Guests" required />
+      <input type="text" id="resName" placeholder="Your Name" required />
+      <input type="tel" id="resPhone" placeholder="Phone Number" required />
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="reservationConfirmation"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
