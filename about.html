@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Order Online | Skakerdo Restaurant</title>
+  <title>About Us | Skakerdo Restaurant</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,211 +24,34 @@
   </header>
 
   <main>
-    <h2>Order Online</h2>
-    <div class="menu-items">
-      <!-- Start of Menu Items with Add to Order buttons -->
-      <div class="menu-item appetizer">
-        <div><img src="springroools.jpg" alt=""></div>
-        <h3>Spring Rolls</h3>
-        <p>Light and crispy.</p>
-        <span>$5.99</span>
-        <button onclick="addToCart('Spring Rolls', 5.99)">Add to Order</button>
-      </div>
-      <div class="menu-item appetizer">
-         <div><img src="Homemade-Mozzarella-Sticks-Recipe-1-of-1.jpg" alt=""></div>
-        <h3>Mozzarella Sticks</h3>
-        <p>Fried cheese with marinara sauce.</p>
-        <span>$6.50</span>
-        <button onclick="addToCart('Mozzarella Sticks', 6.50)">Add to Order</button>
-      </div>
-      <div class="menu-item appetizer">
-        <div><img src="featured-buffalo-wings-recipe.jpg" alt=""></div>
-        <h3>Buffalo Chicken Wings</h3>
-        <p>Spicy wings served with ranch dip.</p>
-        <span>$7.99</span>
-        <button onclick="addToCart('Buffalo Chicken Wings', 7.99)">Add to Order</button>
-      </div>
-      <div class="menu-item appetizer">
-        <div><img src="fried-gyoza-min.jpg" alt=""></div>
-        <h3>Fried Dumplings</h3>
-        <p>Stuffed with pork and veggies.</p>
-        <span>$6.99</span>
-        <button onclick="addToCart('Fried Dumplings', 6.99)">Add to Order</button>
-      </div>
-      <div class="menu-item appetizer">
-    <div><img src="tempura shrimp.jpg" alt=""></div>
-        <h3>Tempura Shrimp</h3>
-        <p>Golden and crispy Japanese-style shrimp.</p>
-        <span>$8.25</span>
-        <button onclick="addToCart('Tempura Shrimp', 8.25)">Add to Order</button>
-      </div>
-      <div class="menu-item appetizer">
-      <div><img src="Hummuus w pita.jpg" alt=""></div>
-        <h3>Hummus with Pita</h3>
-        <p>Chickpea dip served with warm pita bread.</p>
-        <span>$5.75</span>
-        <button onclick="addToCart('Hummus with Pita', 5.75)">Add to Order</button>
-      </div>
-      <div class="menu-item appetizer">
-   <div><img src="falafel balls.webp" alt=""></div>
-        <h3>Falafel Balls</h3>
-        <p>Deep-fried chickpea patties served with tahini.</p>
-        <span>$6.25</span>
-        <button onclick="addToCart('Falafel Balls', 6.25)">Add to Order</button>
-      </div>
-      <div class="menu-item appetizer">
-    <div><img src="tuna tartare.webp" alt=""></div>
-        <h3>Tuna Tartare</h3>
-        <p>Fresh tuna with avocado on wonton crisps.</p>
-        <span>$9.99</span>
-        <button onclick="addToCart('Tuna Tartare', 9.99)">Add to Order</button>
-      </div>
-      <div class="menu-item appetizer">
-    <div><img src="baked brie.jpg" alt=""></div>
-        <h3>Baked Brie</h3>
-        <p>Warm brie with cranberry sauce.</p>
-        <span>$8.75</span>
-        <button onclick="addToCart('Baked Brie', 8.75)">Add to Order</button>
-      </div>
+   
+    <section id="about">
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p class="intro"><strong>Welcome to Skakerdo – Where Tradition Meets Taste!</strong></p>
+        <p>Founded in 2004, <strong>Skakerdo Restaurant</strong> was born out of a deep love for authentic family recipes and a dream to bring people together through food. What started as a humble eatery in a small corner of the city has now blossomed into a culinary destination known for its vibrant flavors, warm atmosphere, and unforgettable dining experience.</p>
+        <p>At Skakerdo, we specialize in blending traditional flavors with modern culinary techniques. Every dish on our menu is crafted with care, using only the freshest local ingredients and spices sourced from around the world.</p>
 
-      <!-- Main Courses -->
-      <div class="menu-item main">
-   <div><img src="grilled chicken.jpg" alt=""></div>
-        <h3>Grilled Chicken</h3>
-        <p>Served with vegetables.</p>
-        <span>$12.99</span>
-        <button onclick="addToCart('Grilled Chicken', 12.99)">Add to Order</button>
-      </div>
-      <div class="menu-item main">
-   <div><img src="Grilled-Ribeye-480x480.jpg" alt=""></div>
-        <h3>Grilled Ribeye Steak</h3>
-        <p>Juicy steak with garlic butter and mashed potatoes.</p>
-        <span>$19.99</span>
-        <button onclick="addToCart('Grilled Ribeye Steak', 19.99)">Add to Order</button>
-      </div>
-      <div class="menu-item main">
-     <div><img src="BBQ rib.webp" alt=""></div>
-        <h3>BBQ Ribs</h3>
-        <p>Slow-cooked ribs glazed with house BBQ sauce.</p>
-        <span>$17.50</span>
-        <button onclick="addToCart('BBQ Ribs', 17.50)">Add to Order</button>
-      </div>
-      <div class="menu-item main">
-    <div><img src="SpagehetiCarbonara.avif" alt=""></div>
-        <h3>Spaghetti Carbonara</h3>
-        <p>Creamy pasta with pancetta and parmesan cheese.</p>
-        <span>$13.75</span>
-        <button onclick="addToCart('Spaghetti Carbonara', 13.75)">Add to Order</button>
-      </div>
-      <div class="menu-item main">
-       <div><img src="Classic Lasagna.jpg" alt=""></div>
-        <h3>Classic Lasagna</h3>
-        <p>Layered pasta with rich beef ragu and béchamel sauce.</p>
-        <span>$14.99</span>
-        <button onclick="addToCart('Classic Lasagna', 14.99)">Add to Order</button>
-      </div>
-      <div class="menu-item main">
-        <div><img src="easy-butter-chicken-image1-197844-1.jpg" alt=""></div>
-        <h3>Butter Chicken</h3>
-        <p>Creamy tomato gravy served with naan or rice.</p>
-        <span>$13.50</span>
-        <button onclick="addToCart('Butter Chicken', 13.50)">Add to Order</button>
-      </div>
-      <div class="menu-item main">
-   <div><img src="Palak-paneer-7.jpg" alt=""></div>
-        <h3>Palak Paneer</h3>
-        <p>Spinach curry with cottage cheese cubes. (Vegetarian)</p>
-        <span>$12.25</span>
-        <button onclick="addToCart('Palak Paneer', 12.25)">Add to Order</button>
-      </div>
-      <div class="menu-item main">
-  <div><img src="chicken-teriyaki-recipe.jpg" alt=""></div>
-        <h3>Chicken Teriyaki</h3>
-        <p>Grilled chicken glazed with teriyaki sauce over rice.</p>
-        <span>$12.75</span>
-        <button onclick="addToCart('Chicken Teriyaki', 12.75)">Add to Order</button>
-      </div>
-      <div class="menu-item main">
-        <div><img src="pf-changs-beef-and-broccoli-feature.jpg" alt=""></div>
-        <h3>Beef & Broccoli</h3>
-        <p>Stir-fried in savory garlic soy sauce, served with rice.</p>
-        <span>$13.25</span>
-        <button onclick="addToCart('Beef & Broccoli', 13.25)">Add to Order</button>
-      </div>
+        <h3>Our Mission</h3>
+        <p>To serve food that brings joy, comfort, and connection — one plate at a time. We believe that dining is more than just eating — it’s about community, storytelling, and memories.</p>
 
-      <!-- Desserts -->
-      <div class="menu-item dessert">
-     <div><img src="chocolate_cake.jpg" alt=""></div>
-        <h3>Chocolate Cake</h3>
-        <p>Rich and moist.</p>
-        <span>$6.50</span>
-        <button onclick="addToCart('Chocolate Cake', 6.50)">Add to Order</button>
-      </div>
-      <div class="menu-item dessert">
-        <div><img src="New-York-Cheesecake-Recipe-2.jpg" alt=""></div>
-        <h3>New York Cheesecake</h3>
-        <p>Classic cheesecake with a graham cracker crust.</p>
-        <span>$6.99</span>
-        <button onclick="addToCart('New York Cheesecake', 6.99)">Add to Order</button>
-      </div>
-      <div class="menu-item dessert">
-     <div><img src="warmApplePie.jpg" alt=""></div>
-        <h3>Warm Apple Pie</h3>
-        <p>Served with a scoop of vanilla ice cream.</p>
-        <span>$5.99</span>
-        <button onclick="addToCart('Warm Apple Pie', 5.99)">Add to Order</button>
-      </div>
-      <div class="menu-item dessert">
-        <div><img src="IceCreamSundae.jpg" alt=""></div>
-        <h3>Ice Cream Sundae</h3>
-        <p>Three scoops with chocolate syrup and sprinkles.</p>
-        <span>$5.50</span>
-        <button onclick="addToCart('Ice Cream Sundae', 5.50)">Add to Order</button>
-      </div>
-      <div class="menu-item dessert">
-        <div><img src="Traditional-Italian-gelato-222-1024x768.webp" alt=""></div>
-        <h3>Italian Gelato</h3>
-        <p>Choose from pistachio, chocolate, or strawberry.</p>
-        <span>$5.75</span>
-        <button onclick="addToCart('Italian Gelato', 5.75)">Add to Order</button>
-      </div>
-      <div class="menu-item dessert">
-<div><img src="tiramisu-4583.jpg" alt=""></div>
-        <h3>Tiramisu</h3>
-        <p>Espresso-soaked ladyfingers layered with mascarpone cream.</p>
-        <span>$6.99</span>
-        <button onclick="addToCart('Tiramisu', 6.99)">Add to Order</button>
-      </div>
-      <div class="menu-item dessert">
-      <div><img src="gulab-jamun-80285-1.jpeg" alt=""></div>
-        <h3>Gulab Jamun</h3>
-        <p>Sweet Indian dumplings soaked in rose syrup.</p>
-        <span>$4.99</span>
-        <button onclick="addToCart('Gulab Jamun', 4.99)">Add to Order</button>
-      </div>
-      <div class="menu-item dessert">
-  <div><img src="Mochi-Ice-Cream.jpg" alt=""></div>
-        <h3>Mochi Ice Cream</h3>
-        <p>Japanese rice cakes filled with flavored ice cream.</p>
-        <span>$5.25</span>
-        <button onclick="addToCart('Mochi Ice Cream', 5.25)">Add to Order</button>
-      </div>
-      <!-- End of Menu Items -->
+        <h3>Our Values</h3>
+        <ul>
+        <li><strong>Authenticity</strong> – We honor our culinary roots with every recipe.</li>
+        <li><strong>Quality</strong> – Only the finest ingredients make it to your table.</li>
+        <li><strong>Hospitality</strong> – Our guests are family. Every visit should feel like coming home.</li>
+        <li><strong>Sustainability</strong> – We’re committed to eco-friendly practices, from farm to fork.</li>
+        </ul>
+
+        <h3>Meet the Team</h3>
+        <p>Our kitchen is led by <strong>Chef Ayan Daraman</strong>, a passionate innovator with over 15 years of experience in international cuisine. His creativity and love for fusion dishes have won the hearts of regulars and newcomers alike.</p>
+        <p>Skakerdo's front-of-house is run by <strong>Melben</strong> and <strong>Dodot</strong>, whose friendly smile and dedication to service excellence ensure that every guest leaves with a full belly and a happy heart.</p>
+
+        <h3>Join the Experience</h3>
+        <p>Whether you're here for a quick lunch, a romantic dinner, or a family celebration, Skakerdo is here to serve up moments as flavorful as our meals. Come join us — your table is waiting.</p>
     </div>
+    </section>
 
-    <h3>Your Order</h3>
-    <ul id="cartItems"></ul>
-    <p><strong>Subtotal:</strong> $<span id="subtotal">0.00</span></p>
-
-    <form onsubmit="return submitOrderForm()">
-      <input type="text" id="orderName" placeholder="Your Name" required />
-      <input type="text" id="orderAddress" placeholder="Delivery Address" required />
-      <input type="tel" id="orderPhone" placeholder="Phone Number" required />
-      <button type="submit">Checkout</button>
-    </form>
-    <p id="orderConfirmation"></p>
   </main>
-
-  <script src="script.js"></script>
 </body>
 </html>
