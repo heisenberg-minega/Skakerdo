@@ -99,6 +99,7 @@ main {
 /* === Menu Section === */
 .menu-items {
   display: grid;
+  border-image-width: auto;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin-top: 20px;
@@ -304,4 +305,84 @@ footer {
   .hero, .carousel-container {
     flex: 1 1 100%;
   }
+}
+
+#about {
+  background-color: #fdfaf6;
+  padding: 60px 20px;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #c0392b;
+  margin-bottom: 30px;
+}
+
+#about h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #c0392b;
+}
+
+#about p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+#about .intro {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#about ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+#about li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 600px) {
+  #about h2 {
+    font-size: 2rem;
+  }
+  #about h3 {
+    font-size: 1.3rem;
+  }
+  #about p, #about li {
+    font-size: 1rem;
+  }
+}
+/* Make menu images responsive */
+.menu-item div {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px; /* match your existing style */
+  margin-bottom: 10px;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: slight zoom on hover for a subtle effect */
+.menu-item:hover img {
+  transform: scale(1.05);
 }
