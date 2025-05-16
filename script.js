@@ -17,7 +17,7 @@ function validateContactForm() {
     return false;
   }
   document.getElementById("contactConfirmation").textContent = "Thank you for contacting us!";
-  return false; // Prevent actual form submission
+  return false; 
 }
 
 function validateReservationForm() {
@@ -51,4 +51,39 @@ function submitOrderForm() {
   document.getElementById("orderConfirmation").textContent =
     "Thank you for your order! We will contact you to confirm.";
   return false;
+}
+function toggleMenu() {
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('active');
+}
+
+function addToCart(itemName, itemPrice) {
+  const cartItems = document.getElementById('cartItems');
+  const subtotal = document.getElementById('subtotal');
+  
+
+  const li = document.createElement('li');
+  li.textContent = `${itemName} - $${itemPrice.toFixed(2)}`;
+
+
+  const removeBtn = document.createElement('button');
+  removeBtn.textContent = "Remove";
+  removeBtn.style.marginLeft = "10px";
+  removeBtn.onclick = function() {
+    cartItems.removeChild(li);
+    updateSubtotal(-itemPrice);
+  };
+
+  li.appendChild(removeBtn);
+  cartItems.appendChild(li);
+
+
+  updateSubtotal(itemPrice);
+}
+
+function updateSubtotal(amount) {
+  const subtotal = document.getElementById('subtotal');
+  let currentTotal = parseFloat(subtotal.textContent);
+  currentTotal += amount;
+  subtotal.textContent = currentTotal.toFixed(2);
 }
