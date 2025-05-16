@@ -9,16 +9,18 @@
 <body>
   <header>
     <nav>
-      <h1>Skakerdo Restaurant</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="reservation.html">Reservation</a></li>
-        <li><a href="order.html">Order Online</a></li>
-      </ul>
-    </nav>
+  <h1>Skakerdo Restaurant</h1>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <ul id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="reservation.html">Reservation</a></li>
+    <li><a href="order.html">Order Online</a></li>
+  </ul>
+</nav>
+
   </header>
 
   <main>
@@ -30,7 +32,7 @@
       <button onclick="filterMenu('dessert')">Desserts</button>
     </div>
     <div class="menu-items">
-      <!-- Appetizers -->
+    
       <div class="menu-item appetizer">
         <div><img src="springroools.jpg" alt=""></div>
         <h3>Spring Rolls</h3>
@@ -38,7 +40,7 @@
         <span>$5.99</span>
       </div>
 
-      <!-- Classic Appetizers -->
+     
       <div class="menu-item appetizer">
         <div><img src="Homemade-Mozzarella-Sticks-Recipe-1-of-1.jpg" alt=""></div>
         <h3>Mozzarella Sticks</h3>
@@ -52,7 +54,7 @@
         <span>$7.99</span>
       </div>
 
-      <!-- Asian Appetizers -->
+     
       <div class="menu-item appetizer">
         <div><img src="fried-gyoza-min.jpg" alt=""></div>
         <h3>Fried Dumplings</h3>
@@ -66,7 +68,7 @@
         <span>$8.25</span>
       </div>
 
-      <!-- Mediterranean Appetizers -->
+     
       <div class="menu-item appetizer">
         <div><img src="Hummuus w pita.jpg" alt=""></div>
         <h3>Hummus with Pita</h3>
@@ -80,7 +82,7 @@
         <span>$6.25</span>
       </div>
 
-      <!-- Upscale/Modern Appetizers -->
+    
       <div class="menu-item appetizer">
         <div><img src="tuna tartare.webp" alt=""></div>
         <h3>Tuna Tartare</h3>
@@ -94,7 +96,7 @@
         <span>$8.75</span>
       </div>
 
-      <!-- Existing Main Course -->
+     
       <div class="menu-item main">
         <div><img src="grilled chicken.jpg" alt=""></div>
         <h3>Grilled Chicken</h3>
@@ -102,9 +104,9 @@
         <span>$12.99</span>
       </div>
 
-      <!-- New Main Courses -->
+     
 
-      <!-- Classic Western Mains -->
+    
       <div class="menu-item main">
         <div><img src="Grilled-Ribeye-480x480.jpg" alt=""></div>
         <h3>Grilled Ribeye Steak</h3>
@@ -118,7 +120,7 @@
         <span>$17.50</span>
       </div>
 
-      <!-- Italian Mains -->
+     
       <div class="menu-item main">
         <div><img src="SpagehetiCarbonara.avif" alt=""></div>
         <h3>Spaghetti Carbonara</h3>
@@ -132,7 +134,7 @@
         <span>$14.99</span>
       </div>
 
-      <!-- Indian Mains -->
+      
       <div class="menu-item main">
         <div><img src="easy-butter-chicken-image1-197844-1.jpg" alt=""></div>
         <h3>Butter Chicken</h3>
@@ -146,7 +148,7 @@
         <span>$12.25</span>
       </div>
 
-      <!-- Asian Mains -->
+     
       <div class="menu-item main">
         <div><img src="chicken-teriyaki-recipe.jpg" alt=""></div>
         <h3>Chicken Teriyaki</h3>
@@ -160,7 +162,7 @@
         <span>$13.25</span>
       </div>
 
-      <!-- Existing Dessert -->
+    
       <div class="menu-item dessert">
         <div><img src="chocolate_cake.jpg" alt=""></div>
         <h3>Chocolate Cake</h3>
@@ -168,7 +170,7 @@
         <span>$6.50</span>
       </div>
 
-      <!-- Classic Desserts -->
+   
       <div class="menu-item dessert">
         <div><img src="New-York-Cheesecake-Recipe-2.jpg" alt=""></div>
         <h3>New York Cheesecake</h3>
@@ -182,7 +184,6 @@
         <span>$5.99</span>
       </div>
 
-      <!-- Frozen Desserts -->
       <div class="menu-item dessert">
         <div><img src="IceCreamSundae.jpg" alt=""></div>
         <h3>Ice Cream Sundae</h3>
@@ -196,7 +197,7 @@
         <span>$5.75</span>
       </div>
 
-      <!-- Specialty & International Desserts -->
+    
       <div class="menu-item dessert">
         <div><img src="tiramisu-4583.jpg" alt=""></div>
         <h3>Tiramisu</h3>
