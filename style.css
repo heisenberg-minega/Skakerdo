@@ -441,4 +441,54 @@ nav a {
   .hamburger {
     display: block;
   }
+}nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
 }
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#navLinks {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+#navLinks li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  #navLinks {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 150px;
+  }
+
+  #navLinks.active {
+    display: flex;
+  }
+}
+
